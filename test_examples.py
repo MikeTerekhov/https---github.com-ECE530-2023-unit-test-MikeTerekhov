@@ -62,4 +62,4 @@ def test_bad_matrix_input(monkeypatch):
     with pytest.raises(ValueError) as exc_info:
         m = obtain_input_mat()
     # assert exc_info.value.args[0] == 'some info'
-    assert str(exc_info.value) == 'some info'
+    assert str(exc_info.value) == "invalid literal for int() with base 10: 'd'"
